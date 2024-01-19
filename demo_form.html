@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+<body>
+    <h2>User Information Form</h2>
+
+    <form id="userInfoForm">
+        <!-- Input field for Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br>
+
+        <!-- Input field for Phone Number -->
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+        <small>Enter a 10-digit phone number</small>
+
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // JavaScript code (optional) can be added here for additional functionality
+        document.getElementById("userInfoForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the form from submitting normally
+
+            // Get values from form fields
+            var name = document.getElementById("name").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+
+            // Display the collected information (you can replace this with your desired logic)
+            alert("Name: " + name + "\nPhone Number: " + phoneNumber);
+
+            // Add logic to send data to the server or perform other actions as needed
+        });
+    </script>
+</body>
+</html>
