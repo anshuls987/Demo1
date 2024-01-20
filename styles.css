@@ -17,6 +17,7 @@ nav ul {
 }
 
 nav li {
+    colour: red;
     display: inline;
     margin-right: 10px;
 }
