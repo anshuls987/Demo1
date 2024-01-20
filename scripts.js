@@ -15,7 +15,7 @@ function submitPassword() {
         if (response.ok) {
             // Password is correct, show the PDF
             document.getElementById("passwordForm").style.display = "none";
-            document.getElementById("documentFrame").src = "C:\Users\anshu\Downloads\alice_python\Demo_website\password-protected-pdf.php";
+            document.getElementById("documentFrame").src = "password-protected-pdf.php";
         } else {
             // Incorrect password, display an error message
             alert("Incorrect password.");
