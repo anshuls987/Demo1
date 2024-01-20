@@ -12,13 +12,11 @@ header, nav, main, footer {
 }
 
 nav ul {
-    color: red;
     list-style-type: none;
     padding: 0;
 }
 
 nav li {
-    color: red;
     display: inline;
     margin-right: 10px;
 }
@@ -26,6 +24,10 @@ img {
     max-width: 100%;
     height: auto;
     margin-top: 10px; /* Adjust margin as needed */
+}
+nav a {
+    color: red;
+    text-decoration: none;
 }
 
 footer {
